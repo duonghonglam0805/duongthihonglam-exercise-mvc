@@ -9,7 +9,7 @@ class FruitController extends Controller
 {
     public function getFruits()
     {
-        $fruits = Fruit::all();
+        $fruits = Fruit::all(); // Để lấy dữ liệu từ model
         return view('fruits', ['fruits' => $fruits]);
     }
 }
